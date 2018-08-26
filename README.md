@@ -4,13 +4,13 @@ Public Messenge receive with tasker
 
 ## phone number
 
-await activate()
+(518)961-1755
 
 ## messages
 
-view in [issues](/issues)
+view in [issues](../../issues)
 
 ## @TODO
 
 - a website to view
-- support record
+- support phone record
