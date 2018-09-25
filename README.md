@@ -1,6 +1,12 @@
 # Tasker-Messenger
 
-Public Messenge receive with tasker
+Message receive with tasker and Github issue
+
+## **Warning**
+
+These phone numbers are test cases. The services may be closed at any time. 
+
+**Use at your own risk.**
 
 ## Config
 
