@@ -14,22 +14,24 @@ These phone numbers are test cases. The services may be closed at any time.
 
 Fill in the Access Token and repo accordingly.
 
-## phone number
+## Available Phone Numbers
 
 - (518)961-1755
 - (742)239-8611
 
-## messages
+## Messages
 
 view in [issues](../../issues)
 
-## Limitation
+## Limitations
 
-- Phone Model: Huawei P9
+- Phone Model: Huawei P9 (EVO-TL00. China Mobile edition). Always awake.
 - usually it takes a minute before the message show up.
 - if no message received, and you are sure that the message was sent, maka a phone call to this number to reactivate the cellar network (not my phone's issue but i have to do the same thing when it can make outgoing but no incoming)
 
 ## @TODO
 
 - a website to view
-- support phone record
+- Analyze content and add appropriate tags (verification code, google, etc.)
+- ~~support incoming phone recording && dial verification code~~ Unless someone can help me unlock/root my fucking Huawei P9.
+- ~~Change numbers regularly~~ Unless someone wants to donate me. ($5 for two real numbers)
