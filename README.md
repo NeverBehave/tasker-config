@@ -16,8 +16,8 @@ Fill in the Access Token and repo accordingly.
 
 ## Available Phone Numbers
 
-- (518)961-1755 (Mint Sim Trial Edition)
-- (742)239-8611 (CMLink)
+- +1(518)961-1755 (Mint Sim Trial Edition)
+- +44(742)239-8611 (CMLink)
 
 ## Messages
 
