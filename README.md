@@ -1,10 +1,10 @@
 # Tasker-Messenger
 
-Message receive with tasker and Github issue
+Message receive with Tasker and Github issue
 
 ## **Warning**
 
-These phone numbers are test cases. The services may be closed at any time. 
+These phone numbers are test cases. The services may close at any time. 
 
 **Use at your own risk.**
 
@@ -16,7 +16,7 @@ Fill in the Access Token and repo accordingly.
 
 ## Available Phone Numbers
 
-- (518)961-1755 (Mint Sim Trail Edition)
+- (518)961-1755 (Mint Sim Trial Edition)
 - (742)239-8611 (CMLink)
 
 ## Messages
