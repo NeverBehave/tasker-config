@@ -1,38 +1,25 @@
-# Tasker-Messenger
+# Tasker-Config
 
-Message receive with Tasker and Github issue
+Some Tasker scripts that works with github, telegram, google voice, etc.
 
-## **Warning**
+## TOC
 
-These phone numbers are test cases. The services may close at any time. 
+> For all the Telegram related xml, replace `YOUR-CHAT-ID` and `YOUR-BOT-TOKEN` accordingly  
+> You may safely remove any tts related stuff, they are just for sound notification that I know tasker is working.
 
-**Use at your own risk.**
+- [Receive Message and send to github issue](./message-github-issue.xml)
+  - Replace `YOUR-REPO` and `YOUR-ACCESS-TOKEN` accordingly
+- [Auto Reply Message on Google Voice](./Google_Voice_Auto_Reply.prf.xml)
+  - Data Source: "Download/sao.txt", downloaded from <https://gist.github.com/NeverBehave/606d7e14436187b4d45e8657fafd40ab>
+  - Random choose one from the file, you may define your own behavior
+  - **Read Related Blog #2 for more details**
+- [Received Message and send with Telegram bot to given chat](./Message_Arrived.prf.xml)
 
-## Config
+- [Received phone call and send notification to Telegram](./Phone_Call_Arrived.prf.xml)
+- [Telegram Notification when phone plugged in or unplug](./Charged.prf.xml)
+- [Telegram Notification when Battery hot](./Battery_Hot.prf.xml)
 
-[Here](tasker.xml)
+## Related Blog
 
-Fill in the Access Token and repo accordingly.
-
-## Available Phone Numbers
-
-- +1(518)961-1755 (Mint Sim Trial Edition)
-- +44(742)239-8611 (CMLink)
-
-## Messages
-
-view in [issues](../../issues)
-
-## Limitations
-
-- Phone Model: Huawei P9 (EVA-TL00. China Mobile edition). Always awake.
-- usually it takes a minute before the message show up.
-- if no message received, and you are sure that the message was sent, maka a phone call to this number to reactivate the cellar network (not my phone's issue but i have to do the same thing when it can make outgoing but no incoming)
-
-## @TODO
-
-- a website to view
-- Analyze content and add appropriate tags (verification code, google, etc.)
-- ~~support incoming phone recording && dial verification code~~ Unless someone can help me unlock/root my **fucking Huawei P9**.
-    - [FUCKING HUAWEI](https://www.zhihu.com/question/274112974)
-- ~~Change numbers regularly~~ Unless someone wants to donate me. ($5 for two real numbers)
+1. https://blog.never.pet/2019/02/08/tasker-messenger
+2. https://blog.never.pet/2020/05/20/keep-your-google-voice-with-sao

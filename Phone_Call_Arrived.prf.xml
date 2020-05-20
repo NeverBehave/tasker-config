@@ -1,0 +1,109 @@
+<TaskerData sr="" dvi="1" tv="5.9.2">
+	<Profile sr="prof6" ve="2">
+		<cdate>1584940058974</cdate>
+		<clp>true</clp>
+		<edate>1589993147784</edate>
+		<flags>8</flags>
+		<id>6</id>
+		<mid0>5</mid0>
+		<nme>Phone Call Arrived</nme>
+		<Event sr="con0" ve="2">
+			<code>6</code>
+			<Str sr="arg0" ve="3"/>
+		</Event>
+	</Profile>
+	<Task sr="task5">
+		<cdate>1575748969418</cdate>
+		<edate>1587884169010</edate>
+		<id>5</id>
+		<nme>Telegram Phone</nme>
+		<pri>6</pri>
+		<Action sr="act0" ve="7">
+			<code>559</code>
+			<Str sr="arg0" ve="3">New phone call received.</Str>
+			<Str sr="arg1" ve="3">com.google.android.tts:eng-usa</Str>
+			<Int sr="arg2" val="3"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="5"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="1"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var from = global('CNAME')
+var from_name = global('CNUM')
+var obj = { chat_id: YOUR-CHAT-ID, text:`CALL From: ${from} ${from_name}`}
+var ansjson= JSON.stringify(obj)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>116</code>
+			<Str sr="arg0" ve="3">https://api.telegram.org:443</Str>
+			<Str sr="arg1" ve="3">/botYOUR-BOT-TOKEN/sendMessage</Str>
+			<Str sr="arg2" ve="3">%ansjson</Str>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3">application/json</Str>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">var parse = JSON.parse(global('HTTPD'))
+var is_ok = parse.ok
+var descript = parse.description</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>550</code>
+			<Str sr="arg0" ve="3">%is_ok</Str>
+			<Str sr="arg1" ve="3">%descript</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3">Popup</Str>
+			<Int sr="arg4" val="3"/>
+			<Int sr="arg5" val="1"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>559</code>
+			<Str sr="arg0" ve="3">Sent successfully</Str>
+			<Str sr="arg1" ve="3">com.google.android.tts:eng-usa</Str>
+			<Int sr="arg2" val="3"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="5"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%is_ok</lhs>
+					<op>0</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>559</code>
+			<Str sr="arg0" ve="3">Sent failed</Str>
+			<Str sr="arg1" ve="3">com.google.android.tts:eng-usa</Str>
+			<Int sr="arg2" val="3"/>
+			<Int sr="arg3" val="5"/>
+			<Int sr="arg4" val="5"/>
+			<Int sr="arg5" val="1"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%is_ok</lhs>
+					<op>1</op>
+					<rhs>true</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+</TaskerData>

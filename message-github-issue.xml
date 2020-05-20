@@ -28,7 +28,7 @@ var ansjson = JSON.stringify(obj)</Str>
   <Action sr="act3" ve="7">
    <code>116</code>
    <Str sr="arg0" ve="3">https://api.github.com:443</Str>
-   <Str sr="arg1" ve="3">/repos/neverbehave/tasker-messenger/issues?access_token=YOUR_ACCESS_TOKEN</Str>
+   <Str sr="arg1" ve="3">/repos/YOUR-REPO/issues?access_token=YOUR_ACCESS_TOKEN</Str>
    <Str sr="arg2" ve="3">%ansjson</Str>
    <Str sr="arg3" ve="3"/>
    <Str sr="arg4" ve="3">Tasker</Str>
